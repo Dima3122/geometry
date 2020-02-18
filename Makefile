@@ -1,2 +1,2 @@
-main: main.c
-	gcc -o main main.c
+geometry: geometry.c
+	gcc -o geometry geometry.c
