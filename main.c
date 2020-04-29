@@ -1,9 +1,9 @@
+#include "geometry.h"
 #include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "geometry.h"
 
 int main()
 {
@@ -24,7 +24,7 @@ int main()
     proverka(&xt1, &yt1, &xt2, &yt2, &xt3, &yt3);
     float Per_t = per_treyg(xt1, xt2, yt1, yt2, xt3, yt3);
     printf("Периметр треугольника равен: %f\n", Per_t);
-    float Plos_t=area_treyg(xt1, xt2, yt1, yt2, xt3, yt3);
+    float Plos_t = area_treyg(xt1, xt2, yt1, yt2, xt3, yt3);
     printf("Площадь треугольника равна: %f\n", Plos_t);
 
     return 0;

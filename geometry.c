@@ -15,7 +15,7 @@ float Sidelength(int a, int b, int c, int d)
 //Проверка координат треугольника
 void proverka(int* x1, int* y1, int* x2, int* y2, int* x3, int* y3)
 {
-        int q = isalpha(*x1);
+    int q = isalpha(*x1);
     int w = isalpha(*y1);
     int e = isalpha(*x2);
     int s = isalpha(*y2);
@@ -25,7 +25,6 @@ void proverka(int* x1, int* y1, int* x2, int* y2, int* x3, int* y3)
     if (q != 0 || w != 0 || e != 0 || s != 0 || t != 0 || y != 0) {
         exit(1);
     }
-
 
     while (*x1 == *x2 || *x1 == *x3 || *x2 == *x3) {
         printf("Введите новый параметр x1, x2, x3\n");
@@ -37,9 +36,9 @@ void proverka(int* x1, int* y1, int* x2, int* y2, int* x3, int* y3)
         scanf("%d %d %d", &*y1, &*y2, &*y3);
     }
 }
-void checkcircle(int x1, int y1, int *r)
+void checkcircle(int x1, int y1, int* r)
 {
- //Проверка радиуса окружности
+    //Проверка радиуса окружности
     int a = isalpha(x1);
     int b = isalpha(y1);
     int c = isalpha(*r);
@@ -48,8 +47,7 @@ void checkcircle(int x1, int y1, int *r)
         exit(1);
     }
 
-    while (r <= 0) 
-    {
+    while (r <= 0) {
         printf("Введите другое число больше 0  ");
         scanf("%d", &*r);
     }
@@ -57,7 +55,7 @@ void checkcircle(int x1, int y1, int *r)
 
 float perimeter_circle(int r)
 {
-     float Perk = 2*M_PI*r;
+    float Perk = 2 * M_PI * r;
     return Perk;
 }
 
