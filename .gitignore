@@ -2,9 +2,9 @@
 !README.md
 !.gitignore
 !.clang-format
-!.c
+!*.c
 !Makefile
-!.h
+!*.h
 !bin
 !build
 !src
