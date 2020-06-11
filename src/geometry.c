@@ -1,8 +1,4 @@
-#include <ctype.h>
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "geometry.h"
 
 //Вычесление сторон треугольника
 float Sidelength(int a, int b, int c, int d)
